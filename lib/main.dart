@@ -4,16 +4,16 @@ import 'package:laundry/admin_main_page.dart';
 import 'package:laundry/dashboard_admin_page.dart';
 import 'package:laundry/dashboard_user_page.dart';
 import 'package:laundry/user_main_page.dart';
-// import 'package:supabase_flutter/supabase_flutter.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 import 'login_page.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // await Supabase.initialize(
-  //   url: 'https://YOUR_PROJECT_ID.supabase.co',
-  //   anonKey: 'YOUR_ANON_PUBLIC_KEY',
-  // );
+ await Supabase.initialize(
+   url: 'https://kibohtmscsmuuadsxfrd.supabase.co',
+  anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtpYm9odG1zY3NtdXVhZHN4ZnJkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMzMDEyMjEsImV4cCI6MjA4ODg3NzIyMX0.P758LAprHdnqsLaOIUMzTH27uHJEXFlog0mufCWdkEs',
+);
 
   runApp(const LaundryKuApp());
 }
